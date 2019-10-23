@@ -1,0 +1,33 @@
+#library for excel 
+phpspreadsheet
+
+#library role permission 
+spatie permission
+
+#library pdf generator 
+dompdf
+
+#initialize composer to autoload
+- composer-init
+composer generate like
+{
+    "name": "kodingkalaweekend/calculator",
+    "description": "A simple PHP calculator",
+    "type": "library",
+    "authors": [
+        {
+            "name": "kodingkalaweekend",
+            "email": "kodingkalaweekend@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "KodingKalaWeekend\\": "src/"
+        }
+    }
+}
+
+- composer dump-autoload
+untuk menghasilkan folder di vendor
+
